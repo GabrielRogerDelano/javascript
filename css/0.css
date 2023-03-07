@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(105,105,173);
+    font: normal ,1200pt ,arial;
+}
+h1{
+    color: rgb(255,212,22);
+}
+h2{
+    margin-left: 25px;
+    color: chartreuse;
+    font-family: monospace;
+}
+div#area{
+    background: greenyellow;
+}
+input{
+    font: normal 18pt arial;
+    width: 100px;
+}

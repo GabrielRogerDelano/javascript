@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex005</title>
+    <link rel="stylesheet" href="css/0.css">
+</head>
+<body>
+    <h1>Contador de letras , Maiusculas e Minusculas</h1>
+    <p>Abaixo o resultado do <strong> '.length'</strong> que conta as letras</p>
+    <script>
+        var nome = prompt('Qual o seu nome? ')
+        document.write(`<p>seu nome tem ${nome.length} letras ,${nome}</p>`)
+        document.write(`Seu nome em maiusculas fica ,${nome.toUpperCase()},`)
+        document.write(` e em minusculas fica ,${nome.toLocaleLowerCase()}`)
+    </script>
+</body>
+</html>

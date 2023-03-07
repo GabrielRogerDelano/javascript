@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>repetições</title>
+    <link rel="stylesheet" href="css/exercicio.css">
+</head>
+<body>
+    <h3>Estrutura de repetição</h3>
+    <p>Existe o 'DO-WHILE' e 'WHILE' ,a diferença ?...não entendi a diferença</p>
+    <script>
+        cont=1
+        do{
+            document.write(`Esse é do-while repetindo 2 vezes<br>`)
+            cont++
+        }while(cont<=2)
+    </script>
+    <h3>E esse é o while</h3>
+    <script>
+        //estou usando a mesma variavel do do-while ,por isso se alterar em cima vai afetar o while
+        while(cont>=2){
+            document.write(`Esse é WHILE repetindo 2 vezes<br>`)
+            cont--
+        }/* a mesma coisa com o for
+        for(var c = 1 ; c <= 2 ; c++){
+            document.write(`Esse é WHILE repetindo 2 vezes<br>`)
+            cont--
+        }
+        
+        */
+    </script>
+</body>
+</html>

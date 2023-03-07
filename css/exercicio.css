@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover {
+    color: #999;
+}
+a:active {
+    color: #333;
+}
+body{
+    background-color: rgb(75, 142, 256);
+    font: normal 15pt arial;
+}
+header{
+    color: white;
+    text-align: center;
+}
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.836);
+}
+select#lista{
+    width: 200px;
+}
+option{
+    font: normal 11pt arial;
+}
+footer{
+    color: white;
+    text-align: center;
+}
+div{
+    text-align: left;
+    padding: 8px;
+}
+input[type="button" i]{
+    background-color: rgb(0, 110, 255);
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0 4px rgb(166 205 255);
+    border: none;
+    margin-top: 10px;
+}
+input[type="button" i]:hover{
+    box-shadow: 0px 0px 0 4px rgb(0, 110, 255);
+}
+li{
+    list-style-type:none;
+}

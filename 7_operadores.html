@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex007</title>
+    <link rel="stylesheet" href="css/0.css">
+    <style>
+        h2{
+            margin-left: 25px;
+            color: yellowgreen;
+            font-family: monospace;
+        }
+        p{
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Operadores</h1>
+    <HR>
+    <h2>NOT, AND, OR</h2>
+        <p style="width: 60%; float: left;">'!' é a negação, '&&' é o and, '||' é o or</p>
+        <p>
+            <script>
+            var a = 10
+            var b = 5
+            var c = 3
+            document.write(`A = ${a}, B = ${b}, C = ${c}`)
+            document.write(`<br>(a*b) >= c  &&  c==3 ${a*b>c&& c==3},<br> !(8==9 || 10<7) = ${!(8==9 || 10<7)}`)
+            </script>
+        </p>
+        <HR>
+    <H2>TERNÁRIO</H2>
+        <p >Ternário é um if/else que se tem a primeira condição e de se elas for verdadeira faz uma coisa e falsa faz outra. A sua estrutura é a seguinte .<br>
+        CONDIÇÃO ? SE FOR VERDADEIRO : SE FOR FALSO<BR><BR>
+        EX: MEDIA>=7 ?'aprovado':'reprovado'
+        <p><pre>
+            <script>
+                var media = +prompt('valor da media')
+                var resultado = media >=7 ?'aprovado':'reprovado'//resultado recebe aprovado ou reprovado ,reprovado porque deu falso
+                document.write(`a media do aluno foi ${media} ,o aluno foi <strong>${resultado}</strong>`)
+            </script>
+        </pre></p>
+        </p>
+</body>
+</html>

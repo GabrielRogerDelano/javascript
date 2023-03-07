@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex006</title>
+    <link rel="stylesheet" href="css/0.css">
+</head>
+<body>
+    <h1>Formatação de números</h1>
+    <table >
+        <thead>
+            <tr>
+                <td><h2>Ação</h2><hr></td>
+                <td><h2>Resultado</h2></td>
+            </tr>
+        </thead>
+        <tbody >
+            <tr>
+                <td style="width: 50%;"><p>Para que o numero que voce quer ser um valor em Real ele precisa de uma padronização ,entao para que seu float tenha duas casas decimais utiliza-se o <strong>'.toFixed(2)'</strong></p></td>
+                <hr>
+                <td><script>var n1 =  Number(prompt('qual o valor :'))//valor com duas casa decimais
+                document.write(`R$ ${n1.toFixed(2)}`)
+                </script></td>
+            </tr>
+            <tr>
+                <td style="width: 50%;"><p>Se você quer o numero com uma virgula utiliza-se do  <strong>'.replace(' . ',' , ')'</strong></p></td>
+                <td><script>//valor com virgura em vez de ponto
+                document.write(`R$ ${n1.toFixed(2).replace('.',',')}`)
+                </script></td>
+            </tr>
+            <tr>
+                <td style="width: 50%;"><p>Agora o esse codigo converte o numero para moeda ,que nesse caso é para o Real <strong>'.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})'</strong></p></td>
+                <td><script>//formato da moeda da regiao
+                document.write(`${n1.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`)
+                
+                </script></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

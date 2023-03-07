@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex003</title>
+    <link rel="stylesheet" href="css/0.css">
+</head>
+<body>
+    <h1>Manipulando dados com Prompt</h1>
+    <p>OBS 1:
+        Aqui é adicionado o 'Number' para transformar o valor que as variaveis n1 e n2 sejam numeros. Tambem pode adicionar o '.parseInt' ou '.parseFloat' para que seja inteiro ou real 
+    </p>
+    <p>
+            OBS 2: 
+        na soma ,se o js não percebese que n1 e n2 sao numeros ele so iria concatenar.
+        (Number + Number ) = adição
+        (String + String) = concatenação
+    </p>
+    <p>
+            OBS 3:
+        para trasformar em String :
+        ex: var apelido_de_jogo = String(prompt('seu nome no jogo :'))</p>
+    <script>
+        /*  OBS 1:
+        Aqui é adicionado o 'Number' para transformar o valor que as variaveis n1 e n2 sejam numeros. Tambem pode adicionar o '.parseInt' ou '.parseFloat' para que seja inteiro ou real 
+
+            OBS 2: 
+        na soma ,se o js não percebese que n1 e n2 sao numeros ele so iria concatenar.
+        (Number + Number ) = adição
+        (String + String) = concatenação
+
+            OBS 3:
+        para trasformar em String :
+        ex: var apelido_de_jogo = String(prompt('seu nome no jogo :'))
+        */
+        var n1 =Number(prompt('Essa é uma calculadora ,então coloque o valor número 1 : '))
+        var n2 =Number(prompt('coloque o valor número 2 : '))
+        var soma = (n1+n2)
+        alert('A soma é : '+String(soma))
+    </script>
+</body>
+</html>

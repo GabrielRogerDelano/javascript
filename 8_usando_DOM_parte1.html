@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex008</title>
+    <style>
+        body{
+            background-color: rgb(94, 164, 243);
+            color: white;
+            font : normal 18pt monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Usando DOM</h1>
+    <p>Aqui o resultado</p>
+    <p id="pg1">Aprendendo a usar o <strong>DOM</strong> no Java Script</p>
+    <p class="pg2">Esse paragrafo esta na mesma cor do plano de fundo</p>
+    <div id="msg">clique em mim</div>
+    <hr>
+    <h2>Abaixo o DOM(no codigo esta comentado)</h2>
+    <script>
+        //para mostrar a url no site
+        document.write(document.URL)
+        //mostrando oque esta escrito na tag sem formatação
+        var p1 = document.getElementsByTagName('p')[0]
+        document.write(`<br>No primeiro paragrafo esta escrito assim : ${p1.innerText}`)
+        //para mudar a cor de algum elemento(.style.color = 'a cor que voce quer')
+        p1.style.color = 'blueviolet'
+        //selecionando por id . Tambem pode se usar class,name,
+        var d = document.getElementById('msg')
+        d.style.color = 'green'
+        d.innerHTML = 'O clique em mim agora modificado pelo DOM'
+        //usando o querySelecion que é o mais recomendado
+        var a = document.querySelector('p#pg1')// '#' é para id
+        var b = document.querySelector('p.pg2')// '.' é para class
+        a.style.color = 'red'
+        b.style.color = 'rgb(94, 164, 243)'
+    </script>
+</body>
+</html>

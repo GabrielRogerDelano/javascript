@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex009</title>
+    <link rel="stylesheet" href="css/0.css">
+    <style>
+        body{
+            font: normal 18pt arial;
+        }
+        div#area{
+            font: normal 20pt arial;
+            background: rgb(60, 236, 16);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            
+        }
+        div#paragragrafo{
+            font: italic;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()" >
+        interaja...
+    </div>
+    <div id="paragrafo">
+        <p>Acima esta um bloco dentro de uma div com um evento de clicar do mouse que ativa uma função no JS</p>
+    </div>
+    <script>
+        /*
+        Em vez de todos os eventos ficarem na tag pode coloca-las desse jeito no js 
+
+        var a = document.getElementById('area')
+        a.addEventListener('click',clicar)
+        a.addEventListener('mouseenter',entrar)
+        a.addEventListener('mouseout',sair)
+        */
+        function clicar(){
+            var a = document.getElementById('area')
+            a.innerText = 'clicou!'
+            a.style.background = 'red'
+        }
+        function entrar(){
+            var a = document.getElementById('area')
+            a.innerText = 'entrou!'
+            a.style.background = 'violet'
+        }
+        function sair(){
+            var a = document.getElementById('area')
+            a.innerText = 'saiu!'
+            a.style.background = 'rgb(60, 236, 16)'
+        }
+
+    </script>
+</body>
+</html>

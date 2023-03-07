@@ -1,0 +1,24 @@
+Codigos de js
+	alert
+	prompt
+	confirm
+	var 
+	var nome = prompt('seu nome')
+	alert('seu nome é '+nome)
+
+
+n+=4 é a mesma coisa de n=n+4
+** é porcentagem
+== é igual (5=='5' da true)
+=== quando o valor e o tipo sao iguais (5==='5' é false)
+! é não
+&& é and
+|| é or
+
+
+
+
+
+
+No NODE
+	typeof no terminal mostra o tipo da variável

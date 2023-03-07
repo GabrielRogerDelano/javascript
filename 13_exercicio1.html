@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio</title>
+    <link rel="stylesheet" href="css/exercicio.css">
+    <style>      
+        div{
+            text-align: center;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body onload="carregar()">
+    <header>
+        <h1>Hora do dia</h1>
+    </header>
+    
+    <section>
+        <div id="msg"></div>
+        <div id="foto">
+            <img id="imagem" src="img/editado/manha.png" alt="foto de dia">
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Roger</p>
+    </footer>
+
+
+    <script>
+        function carregar() {
+            var msg = document.getElementById('msg')
+            var img = document.getElementById('imagem')
+            var data =  new Date()
+            var hora = data.getHours()
+            msg.innerHTML = `Agora são ${hora} horas`
+            if(hora >=5 && hora <12){
+                img.src = 'img/editado/manha.png'
+                document.body.style.background = '#e2cd9f'
+            }else if(hora>=12 && hora <17){
+                img.src = 'img/editado/tarde.png'
+                document.body.style.background ='#b9846b'
+            }else if(hora>=17 && hora <18){
+                img.src = 'img/editado/finaldetarde.png'
+                document.body.style.background ='rgb(122, 10, 72)'
+            }else{
+                img.src = 'img/editado/noite.png'
+                document.body.style.background ='#515154'
+            }
+        }
+    </script>
+</body>
+</html>

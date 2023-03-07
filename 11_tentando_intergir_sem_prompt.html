@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex011</title>
+    <link rel="stylesheet" href="css/0.css">
+</head>
+<body>
+    <!--ok
+    a pessoas bota dois valores e dependendo de se é um click ou um click com o mouse direito faz uma soma ou multiplicação
+        -clicar = soma
+        -click direito = multiplicação
+    -->
+    <h1>digite seu CEP</h1>
+    <input type="text" size="5" maxlength="5"> - <input type="text" size="3" maxlength="3">
+
+    
+    <h1>recebendo valores pelo prompt mas so quando clicarem um um botão</h1>
+    <input type="submit" onclick="caixa()">
+    <div id="res"></div>
+    
+    <script>
+        function caixa(){
+            var nome = prompt('qual seu nome')
+            var res = document.querySelector('div#res')
+            res.innerHTML = `Seu nome é ${nome.toUpperCase()}, certo? <input type="submit" value='Não' onclick="caixa()">`
+        }
+    </script>
+</body>
+</html>
