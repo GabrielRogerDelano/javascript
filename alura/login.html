@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+<script>
+    var loginCadastrado = "roger"
+    var senhaCadastrada = "1234"
+
+    var numeroDeTentativas = 3
+    var numeroDeTentativasAtuais = 1
+
+    while(numeroDeTentativasAtuais <= numeroDeTentativas){
+        
+        var loginInformado = prompt("Login")
+        var senhaInformada = prompt("Senha")
+        
+        if((loginInformado == loginCadastrado) && (senhaInformada == senhaCadastrada)){
+            alert("Seja bem Vindo ," + loginInformado)
+            numeroDeTentativasAtuais = numeroDeTentativas 
+        }
+        else{
+            if(numeroDeTentativasAtuais == 3){
+                alert("Muitas tentativas incorretas. Tente mais tarde")
+            }
+            else{
+                alert("Login ou senha incorreta, restam tentativas")
+            }
+        }
+        
+        numeroDeTentativasAtuais += 1
+    }
+
+
+</script>
