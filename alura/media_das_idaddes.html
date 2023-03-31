@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var numeorPessoas = parseInt(prompt("quantas pessoas têm ? "))
+
+    var totalIdades = 0
+
+    for(var cont = 1; cont <= numeorPessoas; cont++){
+        
+        var idade = parseInt(prompt("Digite a idade de alguem "))
+        totalIdades = totalIdades + idade
+        var media = totalIdades / numeorPessoas
+
+    }
+
+    mostra(`A soma das idades é ${totalIdades}`)
+    mostra(`E a média é ${media}`)
+    
+    mostra("FIM")
+</script>
