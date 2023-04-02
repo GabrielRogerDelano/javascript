@@ -1,18 +1,5 @@
 <meta charset="UTF-8">
 <script>
-/*Deopis tentar fazer um array para mostrar os numeros ja informados e colocalos em ordem crescente*/
-/*Deopis tentar fazer um array para mostrar os numeros ja informados e colocalos em ordem crescente*/
-/*Deopis tentar fazer um array para mostrar os numeros ja informados e colocalos em ordem crescente*/
-/*Deopis tentar fazer um array para mostrar os numeros ja informados e colocalos em ordem crescente*/
-/*Deopis tentar fazer um array para mostrar os numeros ja informados e colocalos em ordem crescente*/
-/*Deopis tentar fazer um array para mostrar os numeros ja informados e colocalos em ordem crescente*/
-/*Deopis tentar fazer um array para mostrar os numeros ja informados e colocalos em ordem crescente*/
-/*Deopis tentar fazer um array para mostrar os numeros ja informados e colocalos em ordem crescente*/
-/*Deopis tentar fazer um array para mostrar os numeros ja informados e colocalos em ordem crescente*/
-/*Deopis tentar fazer um array para mostrar os numeros ja informados e colocalos em ordem crescente*/
-/*Deopis tentar fazer um array para mostrar os numeros ja informados e colocalos em ordem crescente*/
-/*Deopis tentar fazer um array para mostrar os numeros ja informados e colocalos em ordem crescente*/
-/*Deopis tentar fazer um array para mostrar os numeros ja informados e colocalos em ordem crescente*/
     function pulaLinha() {
 
         document.write("<br>");
@@ -30,20 +17,29 @@
     }    
 
     var numeroPensado = sorteia(10);
+    var cont = 1
 
-    var chute = parseInt(prompt("Já pensei. Qual você acha que é?"));
+    while(cont <= 4){
+        var chute = parseInt(prompt("Já pensei. Qual você acha que é (dica: vai de 0 a 10!)?"));
 
-    if(chute == numeroPensado) {
+        if(chute == numeroPensado) {
+            
+            alert("Uau! Você acertou, pois eu pensei no " + numeroPensado);
+            break
 
-        mostra("Uau! Você acertou, pois eu pensei no " + numeroPensado);
-    } else {
-        if(chute > numeroPensado){
+        } else {
+            if(chute < numeroPensado){
 
-            mostra("Você errou! Seu número é maior que o número sorteado");
+                alert("Você errou! Seu número é MAIOR que o número sorteado");
+            }
+            else{
+
+                alert("Você errou! Seu número é MENOR que o número sorteado");
+            }
         }
-        else{
-
-            mostra("Você errou! Seu número é menos que o número sorteado");
-        }
+        console.log(numeroPensado)
+        cont++
     }
+    
+    mostra("FIM")
 </script>
