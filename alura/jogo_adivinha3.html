@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+<input placeholder="Digite um valor"></input>
+<button>Comparar valores</button>
+<script>    
+    var segredos = [5, 7, 10, 2, 4, 3]
+    var input = document.querySelector("input")
+    input.focus()
+
+    function verifica(){
+        var achou = false
+        for(var posicao = 0; posicao < segredos.length; posicao++)    
+            if(segredos[posicao] == input.value){
+
+                alert(`Voce acertou!!`)
+                achou = true
+                break
+            }
+
+        input.value = ""
+        input.focus()
+    }
+
+    if(achou = false){
+
+        alert("Você errou")
+    }
+    
+
+    var button = document.querySelector("button")
+
+    button.onclick = verifica
+</script>
