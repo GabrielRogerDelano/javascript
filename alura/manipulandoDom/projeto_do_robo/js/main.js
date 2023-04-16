@@ -1,13 +1,13 @@
-const controle = document.querySelectorAll(".controle-ajuste")
+const controle = document.querySelectorAll("[data-controle]")
 
 controle.forEach( (elemento) => {
     elemento.addEventListener("click" , (evento) => {
-        ManipulaDados(evento.target.outerText, evento.target.parentNode)
+        ManipulaDados(evento.target.dataset.controle, evento.target.parentNode)
     })
 })
 
 function ManipulaDados(operacao, controle){
-    const peca = controle.querySelector('.controle-contador')
+    const peca = controle.querySelector('[data-contador]')
 
     if(operacao == "-"){
         peca.value = parseInt(peca.value) - 1

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data-attribites</title>
+</head>
+<body>  
+    <h1>Dados</h1>
+    <ul>
+        <li data-id="1" data-email="danielRocha@gmail.com" value="nome">Daniel Rocha</li>
+        <li data-id="2" data-email="Lucas@gmail.com" value="nome">Lucas </li>
+    </ul>
+    <p>abra o console</p>
+    <script>
+        document.querySelectorAll("li").forEach(LiEl => {
+            console.log(LiEl)
+            console.log("InnerText : " +LiEl.innerText)
+            console.log("InnerHTML : " +LiEl.innerHTML  )
+            console.log("dataset abaixo : " +LiEl.dataset)
+            console.log(LiEl.dataset)
+            console.log("dataset.id : " +LiEl.dataset.id)
+            console.log("dataset.id : " +LiEl.dataset.id)
+            console.log("dataset.email : " +LiEl.dataset.email)
+        })
+    </script>
+</body>
+</html>

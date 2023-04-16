@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data-</title>
+</head>
+<body>
+    <h1>Lista de tintas:</h1>
+    <ul id="lista">
+      <li data-cor="laranja" data-tipo="tinta-exterior"  class="item">Tinta laranja</li>
+      <li data-cor="vermelho" data-tipo="tinta-interior"class="item">Tinta vermelha</li>
+      <li data-cor="branco" data-tipo="tinta-interior" class="item">Tinta branca</li>
+      <li data-cor="amarelo" data-tipo="tinta-exterior" class="item">Tinta amarelo</li>
+      <li data-cor="rosa" data-tipo="tinta-exterior" class="item">Tinta rosa</li>
+    </ul>
+    <div id="res">
+
+    </div>
+    <script>
+        const print = document.querySelector("#res")
+        const item = document.querySelectorAll("[data-cor]")
+        item.forEach( (elemento) => {
+            elemento.addEventListener("click" , (evento) => {
+                console.log(evento.target, evento.target.dataset.cor)
+            })
+        })
+        
+    </script>
+</body>
+</html>
