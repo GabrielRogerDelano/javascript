@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Livros</h1>
+    <p>digite um nome</p>
+    <input type="text" data-nome="">
+    <div id="res">
+        
+    </div>
+    <script>
+        var res = document.querySelector("#res")
+        var livros = [
+            {titulo: "Cangaceiro JavaScript",  
+            autor: "Flávio Almeida", 
+            genero: "Front-end", 
+            editora: "Casa do código", 
+            preco: 31.92},
+
+            {titulo: "Introdução e boas práticas em UX Design",  
+            autor: "Fabricio Teixeira", 
+            genero: "UX & UI", 
+            editora: "Casa do código", 
+            preco: 31.92},
+
+            {titulo: "Scrum",  
+            autor: "Rafael Sabbagh", 
+            genero: "Métodos Ágeis", 
+            editora: "Casa do código", 
+            preco: 31.92},
+        ]
+
+        console.log(livros[0]["autor"])
+        console.log(livros[0].autor)
+    </script>
+</body>
+</html>
