@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Moedas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        ::placeholder{
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contador de moedas</h1>
+    <section id="esquerda">
+        <p>Digite seu nome</p>
+        <input type="text" placeholder="aqui" required>
+        <p>Digite seu o valor em Dolar a ser convertido em reais </p>
+        <input type="text"  placeholder="$" required>
+        <button>Calcular</button>
+    </section>
+    <section id="direita">
+        <div id="res">
+
+        </div>
+    </section>
+    
+
+</body>
+<script>
+    const valorEmDolar = document.querySelector("");
+    const cotacaoDoDolar = 5.31;
+
+    var ValorEmReal = valorEmDolar * cotacaoDoDolar
+    ValorEmReal = ValorEmReal.toFixed(2)
+    console.log(`R$ ` + ValorEmReal)
+</script>
+</html>
