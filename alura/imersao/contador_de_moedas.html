@@ -9,34 +9,55 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
-        ::placeholder{
-            width: 500px;
+        p, input{
+            margin: 10px;
         }
+        div{
+            border-radius: 10px;
+            box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.658);
+            width: 300px;
+            height: 300px;
+            display: inline-block;
+        }
+        div#esquerda{
+            position: absolute;
+            background-color: aquamarine;
+        }
+        div#direita{
+            position: relative;
+            margin-left: 310px ;
+            background-color: rgb(127, 214, 255);
+        }   
     </style>
 </head>
 <body>
-    <h1>Contador de moedas</h1>
-    <section id="esquerda">
-        <p>Digite seu nome</p>
-        <input type="text" placeholder="aqui" required>
-        <p>Digite seu o valor em Dolar a ser convertido em reais </p>
-        <input type="text"  placeholder="$" required>
-        <button>Calcular</button>
-    </section>
-    <section id="direita">
-        <div id="res">
+    <h1 id="titulo">Contador de moedas</h1>
+    <section>
+        <div id="esquerda">
+            <p>Digite seu o valor em Dolar a ser convertido em reais</p>
+            <input type="text"  id="valor" placeholder="$" required>
+            <button>Calcular</button>
+        </div>
+        <div id="direita">
+            <h1>Cotação do Dolar hoje</h1>
+            <p id="cotacao"></p>
+            <p id="resultado">
 
+            </p>
         </div>
     </section>
-    
-
 </body>
 <script>
-    const valorEmDolar = document.querySelector("");
+    const button = document.querySelector("button")
     const cotacaoDoDolar = 5.31;
+    cotacao.innerHTML = `$1 dolar equivale a R$ ${cotacaoDoDolar} reais`
 
-    var ValorEmReal = valorEmDolar * cotacaoDoDolar
-    ValorEmReal = ValorEmReal.toFixed(2)
-    console.log(`R$ ` + ValorEmReal)
+    button.addEventListener("click" , () => {
+        const valorEmDolar = document.querySelector("#valor").value;
+        var ValorEmReal = valorEmDolar * cotacaoDoDolar
+        ValorEmReal = ValorEmReal.toFixed(2)
+
+        resultado.innerHTML =  `$${valorEmDolar}  equivale a R$ ${ValorEmReal} reais`
+    })
 </script>
 </html>
